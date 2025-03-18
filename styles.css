@@ -1,0 +1,353 @@
+/* Base styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: lightpink;
+}
+
+/* Card container */
+.card {
+    width: 250px;
+    height: 350px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+/* Corner styles */
+.corner {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.corner.top-left {
+    top: 0;
+    left: 0;
+}
+
+.corner.bottom-right {
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
+}
+
+.corner .rank {
+    font-size: 30px;
+    font-weight: 900;
+    color: red;
+}
+
+.corner .suit {
+    font-size: 45px;
+    color: red;
+    margin-top: -11px;
+}
+
+/* Card content */
+.card-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 170px;
+    height: 270px;
+    border: 2px solid red;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Queen figure */
+.queen-figure {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border: 4px solid red;
+    border-radius: 50%;
+}
+
+/* Center line */
+.center-line {
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Dress curves base styles */
+.dress-curves {
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+.dress-curves.left {
+    left: -33%;
+}
+
+.dress-curves.right {
+    right: -33%;
+    transform: scaleX(-1);
+}
+
+/* Curve sizes */
+.curve {
+    border: solid 7px red;
+    border-color: red transparent transparent transparent;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateX(-50%) rotate(90deg);
+}
+
+.curve.size-xs {
+    width: 60px;
+    height: 120px;
+    top: 10px;
+}
+
+.curve.size-sm {
+    width: 100px;
+    height: 145px;
+    top: -3px;
+}
+
+.curve.size-md {
+    width: 130px;
+    height: 140px;
+    top: -3px;
+    left: 12px;
+}
+
+.curve.size-lg {
+    width: 160px;
+    height: 150px;
+    top: -8px;
+    left: 20px;
+}
+
+/* Hearts */
+.heart-decoration {
+    font-size: 125px;
+    color: red;
+    position: absolute;
+    left: 48%;
+    transform: translateX(-50%);
+}
+
+.heart-decoration.top {
+    top: -10px;
+}
+
+.heart-decoration.bottom {
+    bottom: -10px;
+    transform: translateX(-50%) rotate(180deg);
+}
+
+.heart-center {
+    font-size: 55px;
+    color: red;
+    position: absolute;
+    top: 19px;
+    left:19px;
+    transform: translate(-50%, -50%);
+}
+
+/* Circles */
+.circle-outer {
+    width: 50px;
+    height: 50px;
+    background: red;
+    border: 4px solid red;
+    border-radius: 50%;
+    position: absolute;
+    top: 45px;
+    left: 30%;
+}
+
+.circle-inner {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border: 4px solid red;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 33%;
+}
+
+/* Queen faces */
+.queen-face {
+    width: 40px;
+    height: 50px;
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    position: absolute;
+    left: 50px;
+}
+
+.queen-face.top {
+    top: -35px;
+    transform: rotate(180deg);
+}
+
+.queen-face.bottom {
+    top: 130px;
+}
+
+/* Face features */
+.face-features {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Hair curls */
+.curl {
+    border: 2px solid red;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.curl.large {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 30px;
+}
+
+.curl.medium {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 30px;
+
+}
+
+.curl.small {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 30px;
+}
+
+.curl.left {
+    left: 25px;
+}
+
+.curl.right {
+    right: 25px;
+}
+
+.curl.medium.left {
+    left: 30px;
+    top: 35px;
+}
+
+.curl.medium.right {
+    right: 30px;
+    top: 35px;
+}
+
+.curl.small.left {
+    left: 35px;
+    top: 40px;
+}
+
+.curl.small.right {
+    right: 35px;
+    top: 40px;
+}
+
+/* Curl details */
+.curl-detail {
+    width: 10px;
+    height: 14px;
+    border: 2px solid red;
+    border-radius: 5px;
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.curl-inner {
+    width: 4px;
+    height: 8px;
+    border: 2px solid red;
+    border-radius: 20px;
+    position: absolute;
+    top: 2px;
+    left: 1px;
+}
+
+/* Crown and lips */
+.crown, .lips {
+    color: red;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.crown {
+    font-size: 60px;
+    top: 50px;
+}
+
+.lips {
+    font-size: 20px;
+    top: 10px;
+}
+
+/* Eyes */
+.eye {
+    width: 12px;
+    height: 20px;
+    border: solid 2px red;
+    border-color: red transparent transparent transparent;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 23px
+}
+
+.eye.left {
+    left: 29px;
+}
+
+.eye.right {
+    left: 11px;
+}
+
+/* Ornaments */
+.ornament {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 0 red;
+    position: absolute;
+}
+
+.ornament.left {
+    top: -50px;
+    left: 60px;
+    box-shadow: 15px 15px 0 0 red;
+    transform: rotate(160deg);
+}
+
+.ornament.right {
+    top: -50px;
+    left: -120px;
+    box-shadow: 15px 15px 0 0 red;
+    transform: rotate(290deg);
+}
